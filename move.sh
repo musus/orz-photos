@@ -4,7 +4,7 @@ JPG_DIR=$PJ_NAME"-jpg"
 RAW_DIR=$PJ_NAME"-raw"
 
 if [ ! -d $JPG_DIR ]; then
-	mkdir $PJ_NAME
+	mkdir $JPG_DIR
 fi
 
 if [ ! -d $RAW_DIR ]; then
