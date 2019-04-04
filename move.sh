@@ -12,10 +12,6 @@ if [ ! -d $RAW_DIR ]; then
 	mkdir $RAW_DIR
 fi
 
-if [ ! -d $SELECT_DIR ]; then
-	mkdir $SELECT_DIR
-fi
-
 for file in *.jpg *.JPG ; do
     [ -f "$file" ] || continue
     mv $file $JPG_DIR'/'

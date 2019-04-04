@@ -4,6 +4,10 @@ JPG_DIR=$PJ_NAME"-jpg"
 RAW_DIR=$PJ_NAME"-raw"
 SELECT_DIR=$PJ_NAME"-select"
 
+if [ ! -d $SELECT_DIR ]; then
+	mkdir $SELECT_DIR
+fi
+
 cd $SELECT_DIR
 for file in *.jpg *.JPG ; do
     [ -f "$file" ] || continue
